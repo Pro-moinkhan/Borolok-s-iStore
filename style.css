@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.buy_icon{
+    width: 2em;
+}
+.welcome_section{
+    overflow: hidden;
+    background-color: darkgrey;
+    margin: auto;
+}
+.wlc_text{
+    min-width: 400px;
+    padding-left: 10vh;
+}
