@@ -2,128 +2,319 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <title>Borolok-s-iStore</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <title>Borolok-s-iStore</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <head>
-        <nav class=" navbar navbar-expand-lg navbar-light bg-light">
-            <div class=" d-flex justify-content-around container-fluid">
-                <div>
-                    <a class="navbar-brand" href="#">
-                        <img class="w-25" src="icons/logo1.png" alt="logo_error">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                </div>
-                <div>
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            <a class="nav-link" href="#">iphone</a>
-                            <a class="nav-link" href="#">Macbook</a>
+  <header class="header">
+    <nav class=" navbar navbar-expand-lg fixed-top navbar-light">
+      <div class="navbar_bg d-flex justify-content-around container-fluid">
+        <div>
+          <a class="navbar-brand" href="#home">
+            <img class="w-25" src="icons/logo1.png" alt="logo_error">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active nav_link" aria-current="page" href="#home">Home</a>
+              <a class="nav-link nav_link" href="#iphone">iphone</a>
+              <a class="nav-link nav_link" href="#Macbook">Macbook</a>
+              <a class="nav-link nav_link" href="#Some_words">Some words</a>
+              <a class="nav-link nav_link" href="#contact">Contact</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+  <main>
+    <section id="home" class="welcome_section container-fluid mt-5">
+      <div class="row">
+        <div class="col-1">
+          <!-- for left space -->
+        </div>
+        <div class="wlc_text col col-lg-5 col-md-6 col-sm-12 mt-5">
+          <h1 class="wlc_h1">Welcome To,</h1>
+          <h1 style="color:navy;" class="wlc_h1">Borolok's iStore.</h1>
+          <p class="w-50 iphone_logic">iPhone buyers are attracted to the Apple brand as a prestigious status symbol or
+            fashion accessory, for the same reasons people like Rolex watches or Gucci bags.</p>
+          <button class="d-flex justify-content-around  btn btn_color btn btn_color_color mt-5">
+            <img class="buy_icon" src="icons/shopping-cart 1.png" alt="img_error">
+            <h3>Buy Now</h3>
+          </button>
+        </div>
+        <div class="col col-lg-5 col-md-6 col-sm-12 ">
+          <img class="img-fluid banner_img" src="images/banner1.png" alt="img_error">
+        </div>
+      </div>
+    </section>
+
+    <section id="iphone" class="container mt-5">
+      <h2 class="title mt-5">iphone</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col mt-5 iphone_card">
+          <div class="card_border card_brd card h-100">
+            <div class="align_iphone_img d-flex justify-content-center">
+              <img class="iphone_img_1" src="images/iphone_12_pro_max.png" class="card-img-top" alt="img_error">
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">iphone 12 pro max</h4>
+              <p class="card-text">5G speed. A14 Bionic, the fastest chip in a smartphone.
+                An edge-to-edge OLED display. Ceramic Shield with four times better drop performance.</p>
+              <h5>rising to $1,199</h5>
+            </div>
+            <div class="card_border footer_bg card-footer">
+              <small class="text-muted">
+                <button class="d-flex justify-content-around  btn btn_color">
+                  <img class="buy_icon" src="icons/shopping-cart 1.png" alt="img_error">
+                  <h3>Buy Now</h3>
+                </button>
+              </small>
+            </div>
+          </div>
+        </div>
+        <div class="col mt-5 iphone_card">
+          <div class="card h-100 card_border card_brd">
+            <div class="align_iphone_img d-flex justify-content-center">
+              <img class="iphone_img_2" src="images/iphone12pro.png" class="card-img-top" alt="img_error">
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">iphone 12 pro</h4>
+              <p class="card-text">5G speed. A14 Bionic, the fastest chip in a smartphone.
+                An edge-to-edge OLED display. Ceramic Shield with four times better drop performance.</p>
+              <h5>rising to $999</h5>
+            </div>
+            <div class="card-footer footer_bg card_border">
+              <small class="text-muted">
+                <button class="d-flex justify-content-around  btn btn_color">
+                  <img class="buy_icon" src="icons/shopping-cart 1.png" alt="img_error">
+                  <h3>Buy Now</h3>
+                </button>
+              </small>
+            </div>
+          </div>
+        </div>
+        <div class="iphone_card col mt-5">
+          <div class="card h-100 card_border card_brd">
+            <div class="align_iphone_img d-flex justify-content-center">
+              <img class="iphone_img_3" src="images/iphone_12.png" class="card-img-top" alt="img_error">
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">iphone 12</h4>
+              <p class="card-text">5G speed. A14 Bionic, the fastest chip in a smartphone.
+                An edge-to-edge OLED display. Ceramic Shield with four times better drop performance.</p>
+              <h5>rising to $699</h5>
+            </div>
+            <div class="card-footer footer_bg card_border">
+              <small class="text-muted">
+                <button class="d-flex justify-content-around  btn btn_color">
+                  <img class="buy_icon" src="icons/shopping-cart 1.png" alt="img_error">
+                  <h3>Buy Now</h3>
+                </button>
+              </small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="Macbook" class="container mt-5">
+      <h2 class="title mt-5">imac</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col mt-5 imac_card">
+          <div class="card_border card_brd card h-100">
+            <div class="align_imac_img d-flex justify-content-center">
+              <img class="imac_img_1" src="images/mackbook_air.png" class="card-img-top" alt="img_error">
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">Macbook Air</h4>
+              <p class="card-text"> CPU speeds up to 3.5x faster. GPU speeds up to 5x faster. Our most advanced Neural
+                Engine for up to 9x faster machine learning.</p>
+              <h5>rising to $899</h5>
+            </div>
+            <div class="card_border footer_bg card-footer">
+              <small class="text-muted">
+                <button class="d-flex justify-content-around  btn btn_color">
+                  <img class="buy_icon" src="icons/shopping-cart 1.png" alt="img_error">
+                  <h3>Buy Now</h3>
+                </button>
+              </small>
+            </div>
+          </div>
+        </div>
+        <div class="col mt-5 imac_card">
+          <div class="card h-100 card_border card_brd">
+            <div class="align_imac_img d-flex justify-content-center">
+              <img class="imac_img_2" src="images/mackbook_pro.png" class="card-img-top" alt="img_error">
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">Mackbook pro</h4>
+              <p class="card-text">up to 2.8x CPU performance. Up to 5x the graphics speed. Our most advanced Neural
+                Engine for up to 11x faster machine learning.</p>
+              <h5>rising to $1399</h5>
+            </div>
+            <div class="card-footer footer_bg card_border">
+              <small class="text-muted">
+                <button class="d-flex justify-content-around  btn btn_color">
+                  <img class="buy_icon" src="icons/shopping-cart 1.png" alt="img_error">
+                  <h3>Buy Now</h3>
+                </button>
+              </small>
+            </div>
+          </div>
+        </div>
+        <div class="imac_card col mt-5">
+          <div class="card h-100 card_border card_brd">
+            <div class="align_imac_img d-flex justify-content-center">
+              <img class="imac_img_3" src="images/mack_mini.png" class="card-img-top" alt="img_error">
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">Mac mini</h4>
+              <p class="card-text">Up to 6x faster graphics. And our most advanced Neural Engine for up to 15x faster
+                machine learning.</p>
+              <h5>rising to $699</h5>
+            </div>
+            <div class="card-footer footer_bg card_border">
+              <small class="text-muted">
+                <button class="d-flex justify-content-around  btn btn_color">
+                  <img class="buy_icon" src="icons/shopping-cart 1.png" alt="img_error">
+                  <h3>Buy Now</h3>
+                </button>
+              </small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="Some_words" class="last container-fluid w-75 mt-5">
+      <h2 class="mt-5 container">Some words</h2>
+      <div class=" row row-cols-1 g-4">
+        <div class="col-md-5">
+          <div class="lst_border card h-100">
+            <div class="card-body">
+              <!-- left section stars -->
+              <div class="row row-cols-1 row-cols-md-12 g-4">
+                <div class="col">
+                  <div class="card_border card_brd card h-100">
+                    <div class="card-body">
+                      <!-- 1 -->
+                      <div class="row ">
+                        <div class="col-lg-3 col-md-12 col-sm-12 d-flex justify-content-center">
+                          <img class="img-fluid" src="icons/image 12.png" alt="icon_error">
                         </div>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </head>
-
-
-    <main>
-        <section class="welcome_section container-fluid">
-            <div class="row">
-                <div class="wlc_text col col-lg-7 col-md-6 col-sm-12 mt-5">
-                        <h1>Welcome To,</h1>
-                        <h1>Borolok's iStore.</h1>
-                        <p class="w-50">iPhone buyers are attracted to the Apple brand as a prestigious status symbol or
-                            fashion accessory, for the same reasons people like Rolex watches or Gucci bags.</p>
-                        <button class="d-flex justify-content-around btn btn-success">
-                            <img class="buy_icon" src="icons/shopping-cart 1.png" alt="img_error">
-                            <h3>Buy Now</h3>
-                        </button>
-                </div>
-                <div class="col col-lg-5 col-md-6 col-sm-12">
-                    <img class="img-fluid" src="images/banner1.png" alt="img_error">
-                </div>
-            </div>
-        </section>
-
-
-        <section class="container">
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
-                  <div class="card h-100">
-                    <img src="images/iphone_12_pro_max.png" class="card-img-top" alt="img_error">
-                    <div class="card-body">
-                      <h5 class="card-title">iphone 12 pro max</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
-                    <div class="card-footer">
-                      <small class="text-muted">Last updated 3 mins ago</small>
+                        <div class="col-lg-9 col-md-12 col-sm-12">
+                          <h3>Find the Perfect Fit</h3>
+                          <h5>Everybody is different, which is why we
+                            offer styles for every body.</h5>
+                        </div>
+                      </div>
+                      <!-- 1end -->
                     </div>
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card h-100">
-                    <img src="..." class="card-img-top" alt="...">
+                  <div class="card_border  card_brd card h-100">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                    </div>
-                    <div class="card-footer">
-                      <small class="text-muted">Last updated 3 mins ago</small>
+                      <!-- 2 -->
+                      <div class="row ">
+                        <div class="col-lg-3 col-md-12 col-sm-12 d-flex justify-content-center">
+                          <img class="img-fluid" src="icons/image 13.png" alt="icon_error">
+                        </div>
+                        <div class="col-lg-9 col-md-12 col-sm-12">
+                          <h3>Free Exchanges</h3>
+                          <h5>One of the many reasons you can shop
+                            with peace of mind.</h5>
+                        </div>
+                      </div>
+                      <!-- 2end -->
                     </div>
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card h-100">
-                    <img src="..." class="card-img-top" alt="...">
+                  <div class="card_border card_brd card h-100">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                    </div>
-                    <div class="card-footer">
-                      <small class="text-muted">Last updated 3 mins ago</small>
+                      <!-- 3 -->
+                      <div class="row ">
+                        <div class="col-lg-3 col-md-12 col-sm-12 d-flex justify-content-center">
+                          <img class="img-fluid" src="icons/image 14.png" alt="icon_error">
+                        </div>
+                        <div class="col-lg-9 col-md-12 col-sm-12 ">
+                          <h3>Contact Our Seller</h3>
+                          <h5>They are here to help you. That's quite
+                            literally what we pay them for.</h5>
+                        </div>
+                      </div>
+                      <!-- 3end -->
                     </div>
                   </div>
                 </div>
               </div>
-        </section>
-    </main>
+              <!-- left section end -->
+            </div>
+          </div>
+        </div>
+        <div class=" col-md-7 mt-5">
+          <div class="lst_border card h-100 ">
+            <img src="icons/XMLID 1.png" class="card-img-top" alt="icon_error">
+          </div>
+        </div>
+    </section>
+  </main>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-        crossorigin="anonymous"></script>
+  <footer id="contact" class="footer container-fluid d-flex email align-items-center justify-content-center mt-5">
+    <div class="form">
+      <h1 class="mt-5">LET'S STAY IN TOUCH</h1>
+    <h6 style="color:darkcyan" >Get updates on sales, specials and more</h6>
+    <hr class="mt-2">
+    <form>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1">
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+      </div>
+      <h3 style="text-decoration: underline; color:aliceblue;">Send mail on:</h3>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+        <label class="form-check-label" for="exampleRadios1">
+          New Products.
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+        <label class="form-check-label" for="exampleRadios2">
+          Sale.
+        </label>
+      </div>
+      <button type="submit" class="btn_color btn mt-3 btn_color-primary">Submit</button>
+    </div>
+    </form>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
 </body>
-
 </html>
